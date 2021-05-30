@@ -40,9 +40,9 @@ export default {
 
     const taskStatus = computed(() => {
       if (new Date(deadline.value).getTime() > new Date().getTime()) {
-        return {class: 'primary', text: 'Активен'}
+        return {class: 'active', text: 'Активен'}
       } else {
-        return {class: 'danger', text: 'Отменен'}
+        return {class: 'cancelled', text: 'Отменен'}
       }
     })
 

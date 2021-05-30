@@ -9,7 +9,7 @@ export default {
       type: String,
       required: true,
       validator(value) {
-        return ['warning', 'primary', 'danger'].includes(value)
+        return ['active', 'done', 'cancelled', 'pending'].includes(value)
       }
     },
     text: {

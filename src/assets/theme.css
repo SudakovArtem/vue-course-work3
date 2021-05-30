@@ -411,16 +411,20 @@ h3 {
     padding: 0 .5rem;
 }
 
-.badge.primary {
+.badge.primary,
+.badge.active,
+.badge.done {
     border-color: #3eaf7c;
     color: #3eaf7c;
 }
 
+.badge.cancelled,
 .badge.danger {
     border-color: #e53935;
     color: #e53935;
 }
 
+.badge.pending,
 .badge.warning {
     border-color: #c25205;
     color: #c25205;

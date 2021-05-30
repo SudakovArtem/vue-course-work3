@@ -8,15 +8,15 @@
     <p><strong>Описание</strong>: {{ getTaskById(taskId).description }}</p>
     <div>
       <button class="btn"
-              @click="changeStatus({status: {class: 'warning', text: 'Выполняется'}, id: getTaskById(taskId).id})">Взять
+              @click="changeStatus({status: {class: 'pending', text: 'Выполняется'}, id: getTaskById(taskId).id})">Взять
         в работу
       </button>
       <button class="btn primary"
-              @click="changeStatus({status: {class: 'primary', text: 'Завершен'}, id: getTaskById(taskId).id})">
+              @click="changeStatus({status: {class: 'done', text: 'Завершен'}, id: getTaskById(taskId).id})">
         Завершить
       </button>
       <button class="btn danger"
-              @click="changeStatus({status: {class: 'danger', text: 'Отменен'}, id: getTaskById(taskId).id})">Отменить
+              @click="changeStatus({status: {class: 'pending', text: 'Отменен'}, id: getTaskById(taskId).id})">Отменить
       </button>
     </div>
   </div>
